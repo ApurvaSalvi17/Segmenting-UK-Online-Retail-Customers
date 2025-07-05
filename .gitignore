@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
@@ -205,3 +206,23 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+=======
+cat > .gitignore <<'EOF'
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+# Data & models – keep raw but ignore heavy derived artefacts
+data/*.xlsx
+data/*.csv.gz
+models/
+# Notebooks checkpoints
+.ipynb_checkpoints/
+# OS files
+.DS_Store
+EOF
+>>>>>>> Initial commit – cleaned data, scripts, dashboard
